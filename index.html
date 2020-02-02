@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+		<title>Mailto Redirect France - Redirigez les liens mailto vers le webmail de votre FAI</title>
+    </head>
+    <body>
+		<div id="app">
+			<router-view :services="services"></router-view>
+		</div>
+		<script type="text/x-template" id="index-template">
+			<div>
+				<div id="title">
+					Utilisez la boite mail de votre FAI pour ouvrir les liens mailto !
+				</div>
+				<div class="circle_container">
+					<div v-for="service in services" class="circle" :id="service.id" :title="service.name" @click="registerService(service)"></div>
+				</div>
+			</div>
+		</script>
+		<script src="index.js"></script>
+    </body>
+</html>

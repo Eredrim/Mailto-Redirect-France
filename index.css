@@ -1,0 +1,111 @@
+body
+{
+	background-color: #56739A;
+	margin: 0;
+	padding: 0;
+}
+
+#title
+{
+	font-family: 'Open Sans', sans-serif;
+	color: White;
+	font-size: 3em;
+	text-align: center;
+	font-weight: 600;
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.circle
+{
+	border-radius: 50%;
+	background: white no-repeat;
+	background-position: center;
+	width: 150px;
+	height: 150px;
+	display: inline-block;
+	clear: both;
+	margin: 15px;
+	transition: background-color 0.6s;
+}
+
+.circle:hover
+{
+	background-color: #444;
+	transition: background-color 0.6s;
+	cursor: pointer;
+}
+
+#orange
+{
+	background-image: url('img/orange.png');
+}
+
+#free
+{
+	background-image: url('img/free.png');
+}
+
+#outlook
+{
+	background-image: url('img/outlook.png');
+}
+
+.circle_container
+{
+	text-align: center;
+	margin-top: 15%;
+}
+
+#instrTitle
+{
+	font-family: 'Open Sans', sans-serif;
+	color: White;
+	font-size: 1.7em;
+	text-align: center;
+	/*font-weight: 600;*/
+	margin-top: 50px;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 100px;
+}
+
+.instruction
+{
+	font-family: 'Open Sans', sans-serif;
+	color: White;
+	font-size: 1em;
+	text-align: left;
+	/*font-weight: 600;*/
+	margin-bottom: 30px;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.instruction img
+{
+	padding: 10px 0 0 20px;
+}
+
+
+
+/* open-sans-regular - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+       url('fonts/open-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/open-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+       url('fonts/open-sans-v17-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('fonts/open-sans-v17-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
